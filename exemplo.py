@@ -34,3 +34,10 @@ df = pd.read_excel('base_invest.xlsx') # Lé a planilha exel da pasta
 
 print(df.head())                       # Exibe as 5 primeiras linhas 
 
+# Abrir abas de planilhas do execel diferentes
+df_transacoes = pd.read_excel('base_invest.xlsx', sheet_name='Transacoes')
+
+df_ativos = pd.read_excel('base_invest.xlsx', sheet_name='Ativo')
+
+print(df_transacoes.head())
+print(df_ativos.head())
